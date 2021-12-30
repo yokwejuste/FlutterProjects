@@ -12,18 +12,24 @@ class MyApp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             title: const Text("Hello man"),
+            backgroundColor: Colors.amber,
             centerTitle: true,
           ),
           body: Column(
             children: const [
-              Center(
-                child: Text("Baby"),
-              ),
+              Text(" need food"),
+              Icon(Icons.accessibility_sharp),
             ],
           ),
           floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.red,
+            child: const Icon(Icons.ring_volume),
             onPressed: () {},
           ),
+        ),
+        darkTheme: ThemeData(
+          accentColor: Colors.amber,
+          primaryColorDark: Colors.blueGrey,
         ),
       );
 }
