@@ -7,7 +7,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 50),
+        padding: const EdgeInsets.only(
+          top: 20,
+        ),
         width: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -52,12 +54,39 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   child: Column(
                     children: <Widget>[
+                      const SizedBox(
+                        height: 60,
+                      ),
                       Container(
                         decoration: const BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               color: Color.fromRGBO(255, 95, 27, 0.3),
+                              blurRadius: 20,
+                              offset: Offset(0, 10),
+                            ),
+                          ],
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              decoration: const BoxDecoration(
+                                border: Border(
+                                  bottom: BorderSide(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  hintText: "Email or Phone number",
+                                  hintStyle: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                  border: InputBorder.none,
+                                ),
+                              ),
                             ),
                           ],
                         ),
