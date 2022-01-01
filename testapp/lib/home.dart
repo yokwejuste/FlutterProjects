@@ -105,16 +105,18 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              child: const TextField(
-                                decoration: InputDecoration(
-                                  hintText: "johndoe@example.com",
-                                  contentPadding: EdgeInsets.only(
-                                    left: 10,
+                              child: const Center(
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                    hintText: "johndoe@example.com",
+                                    contentPadding: EdgeInsets.only(
+                                      left: 10,
+                                    ),
+                                    hintStyle: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                    border: InputBorder.none,
                                   ),
-                                  hintStyle: TextStyle(
-                                    color: Colors.grey,
-                                  ),
-                                  border: InputBorder.none,
                                 ),
                               ),
                             ),
