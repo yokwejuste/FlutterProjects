@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       body: Container(
         padding: const EdgeInsets.only(
           top: 20,
@@ -30,13 +31,17 @@ class HomePage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const <Widget>[
-                  Text("Login",
-                      style: TextStyle(color: Colors.white, fontSize: 40),
-                      textAlign: TextAlign.center),
+                  Center(
+                    child: Text("Login",
+                        style: TextStyle(color: Colors.white, fontSize: 40),
+                        textAlign: TextAlign.center),
+                  ),
                   SizedBox(height: 10),
-                  Text("Welcome Back",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                      textAlign: TextAlign.center),
+                  Center(
+                    child: Text("Welcome Back",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        textAlign: TextAlign.center),
+                  ),
                 ],
               ),
             ),
