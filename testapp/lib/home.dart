@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-
+  final hey = 34;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset : false,
+      resizeToAvoidBottomInset: false,
       body: Container(
         padding: const EdgeInsets.only(
           top: 20,
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Center(
-                    child: Text("Welcome Back",
+                    child: Text("Welcome Back user",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                         textAlign: TextAlign.center),
                   ),
