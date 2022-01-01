@@ -116,16 +116,16 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 40,
+                        height: 30,
                       ),
                       const Text(
-                        "Forgot Password ?",
+                        "Forgot password ?",
                         style: TextStyle(
                           color: Colors.grey,
                         ),
                       ),
                       const SizedBox(
-                        height: 40,
+                        height: 30,
                       ),
                       Container(
                         height: 50,
@@ -146,7 +146,16 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(
-                        height: 50,
+                        height: 40,
+                      ),
+                      const Text(
+                        "Continue with social media",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 40,
                       ),
                       Row(
                         children: <Widget>[
@@ -157,15 +166,37 @@ class HomePage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(50),
                                 color: Colors.blue,
                               ),
+                              child: const Center(
+                                child: Text(
+                                  "Facebook",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
-                          const SizedBox(width: 30,),
+                          const SizedBox(
+                            width: 30,
+                          ),
                           Expanded(
                             child: Container(
                               height: 50,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(50),
                                 color: Colors.black,
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "Github",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ),
                             ),
                           ),
