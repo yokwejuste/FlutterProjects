@@ -129,11 +129,22 @@ class HomePage extends StatelessWidget {
                       ),
                       Container(
                         height: 50,
+                        margin: const EdgeInsets.symmetric(horizontal: 50),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(50),
-                          color: Colors.orange[500]
+                          color: Colors.orange[500],
                         ),
-                      )
+                        child: const Center(
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
