@@ -51,7 +51,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(30),
                   child: Column(
                     children: <Widget>[
                       const SizedBox(
@@ -80,7 +80,31 @@ class HomePage extends StatelessWidget {
                               ),
                               child: const TextField(
                                 decoration: InputDecoration(
-                                  hintText: "Email or Phone number",
+                                  hintText: "John Ddoe",
+                                  contentPadding: EdgeInsets.only(
+                                    left: 10,
+                                  ),
+                                  hintStyle: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                  border: InputBorder.none,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              decoration: const BoxDecoration(
+                                border: Border(
+                                  bottom: BorderSide(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  hintText: "johndoe@example.com",
+                                  contentPadding: EdgeInsets.only(
+                                    left: 10,
+                                  ),
                                   hintStyle: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -91,6 +115,25 @@ class HomePage extends StatelessWidget {
                           ],
                         ),
                       ),
+                      const SizedBox(
+                        height: 40,
+                      ),
+                      const Text(
+                        "Forgot Password ?",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        height: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Colors.orange[500]
+                        ),
+                      )
                     ],
                   ),
                 ),
