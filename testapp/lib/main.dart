@@ -8,7 +8,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      home: HomePage());
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        home: HomePage()
+      );
 }
