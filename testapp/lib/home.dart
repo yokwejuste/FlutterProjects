@@ -10,7 +10,6 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.only(
             top: 20,
           ),
-//         just a comment
           width: double.infinity,
           decoration: const BoxDecoration(
             gradient: LinearGradient(
