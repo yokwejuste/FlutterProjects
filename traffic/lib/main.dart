@@ -8,6 +8,7 @@ class MusicApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          backgroundColor: Colors.blue[200],
           appBar: AppBar(
             actions: const [
               Padding(
@@ -21,6 +22,9 @@ class MusicApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             centerTitle: true,
             toolbarHeight: 50,
+          ),
+          body: const Center(
+            child: Text("My First App"),
           ),
         ),
       );
