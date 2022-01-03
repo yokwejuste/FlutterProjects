@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
-  final hey = 34;
   @override
   Widget build(BuildContext context) => Scaffold(
         resizeToAvoidBottomInset: false,
