@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/sidebar.dart';
 
 void main() => runApp(const MusicApp());
 
@@ -8,24 +9,30 @@ class MusicApp extends StatelessWidget {
   Widget build(BuildContext context) => MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-          backgroundColor: Colors.blue[200],
-          appBar: AppBar(
-            actions: const [
-              Padding(
-                padding: EdgeInsets.only(right: 12),
-                child: Icon(
-                  Icons.menu,
-                  color: Colors.red,
-                ),
-              ),
-            ],
-            backgroundColor: Colors.transparent,
-            centerTitle: true,
-            toolbarHeight: 50,
-          ),
-          body: const Center(
-            child: Text("My First App"),
-          ),
-        ),
+            backgroundColor: Colors.white,
+            drawer: const SideDrawer(),
+            appBar: AppBar(
+                actions: [
+                  IconButton(
+                    icon: const Icon(Icons.account_circle),
+                    onPressed: () {},
+                  ),
+                ],
+                title: Row(
+                  children: <Widget>[
+                    // ignore: deprecated_member_use
+                    FlatButton(
+                      onPressed: () {},
+                      child: const Text(
+                        "DashBoard",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                  ],
+                )),
+            body: Container(
+              child: Column(),
+            )),
       );
 }
