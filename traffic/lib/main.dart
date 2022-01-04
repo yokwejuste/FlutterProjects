@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'components/googles_maps.dart';
 import 'components/sidebar.dart';
 
 void main() => runApp(const MusicApp());
@@ -31,8 +32,7 @@ class MusicApp extends StatelessWidget {
                     ),
                   ],
                 )),
-            body: Container(
-              child: Column(),
-            )),
+            body:const MapSample(),
+            )
       );
 }
