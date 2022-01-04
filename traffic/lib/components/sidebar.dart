@@ -17,7 +17,7 @@ class SideDrawer extends StatelessWidget {
               ),
             ),
             decoration: BoxDecoration(
-              color: Colors.black,
+              color: Colors.lightBlue,
             ),
           ),
           ListTile(
