@@ -10,15 +10,17 @@ class SideDrawer extends StatelessWidget {
         children: <Widget>[
           const DrawerHeader(
             child: Center(
-              child: Text(
-                'Side menu  FlutterCorner',
-                textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white, fontSize: 25),
-              ),
+              child: Text(''),
             ),
+            // decoration: BoxDecoration(
+            //   color: Colors.lightBlue,
+            // ),
             decoration: BoxDecoration(
-              color: Colors.lightBlue,
-            ),
+                color: Colors.blue,
+                image: DecorationImage(
+                    image: NetworkImage(
+                        "https://avatars.githubusercontent.com/u/22576758?v=4"),
+                    fit: BoxFit.cover)),
           ),
           ListTile(
             leading: const Icon(Icons.home),
