@@ -37,7 +37,7 @@ class MapSampleState extends State<MapSample> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: _goToTheLake,
         label: const Text('To the lake!'),
-        icon: const Icon(Icons.directions_boat),
+        icon: const Icon(Icons.waves,)
       ),
     );
   }
