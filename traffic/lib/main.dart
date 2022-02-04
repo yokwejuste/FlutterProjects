@@ -13,6 +13,7 @@ class MusicApp extends StatelessWidget {
         backgroundColor: Colors.white,
         drawer: const SideDrawer(),
         appBar: AppBar(
+          backgroundColor: Colors.blue[300],
             actions: [
               IconButton(
                 icon: const Icon(Icons.account_circle),
