@@ -30,7 +30,9 @@ class MusicApp extends StatelessWidget {
                   onPressed: () {},
                   child: const Text(
                     "DashBoard",
-                    style: TextStyle(color: Color.fromARGB(255, 221, 221, 221), fontSize: 20),
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 221, 221, 221),
+                        fontSize: 20),
                     textAlign: TextAlign.center,
                   ),
                 ),
