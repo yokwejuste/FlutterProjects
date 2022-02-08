@@ -18,9 +18,55 @@ class MusicApp extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 34, 84, 126),
             actions: [
-              IconButton(
-                icon: const Icon(Icons.account_circle),
-                onPressed: () {},
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: PopupMenuButton(
+                  itemBuilder: (context) => [
+                    PopupMenuItem(
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.accessible,
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Text("Handicap"),
+                          )
+                        ],
+                      ),
+                    ),
+                    PopupMenuItem(
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.accessible,
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Text("Handicap"),
+                          )
+                        ],
+                      ),
+                    ),
+                    PopupMenuItem(
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.accessible,
+                            color: Colors.black,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Text("Handicap"),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                  icon: const Icon(Icons.account_circle),
+                ),
               ),
             ],
             title: Row(
