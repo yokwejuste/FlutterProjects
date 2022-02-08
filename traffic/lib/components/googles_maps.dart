@@ -12,7 +12,7 @@ class MapSample extends StatefulWidget {
 
 class _MapSampleState extends State<MapSample> {
   static const _intialCameraPosition = CameraPosition(
-    target: LatLng(7.3697, 12.3547),
+    target: LatLng(4.0511, 9.7679),
     zoom: 11.5,
   );
 
