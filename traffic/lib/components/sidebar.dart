@@ -16,7 +16,7 @@ class SideDrawer extends StatelessWidget {
             //   color: Colors.lightBlue,
             // ),
             decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromARGB(255, 53, 55, 56),
                 image: DecorationImage(
                     image: NetworkImage(
                         "https://avatars.githubusercontent.com/u/22576758?v=4"),
