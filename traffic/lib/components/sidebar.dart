@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traffic/components/secondPage/secondPageHome.dart';
+import 'package:traffic/components/transitions/pageRoute.dart';
 
 class SideDrawer extends StatelessWidget {
   const SideDrawer({Key? key}) : super(key: key);
@@ -35,24 +36,8 @@ class SideDrawer extends StatelessWidget {
             onTap: () => {
               Navigator.push(
                 context,
-                PageRouteBuilder(
-                  transitionDuration: const Duration(seconds: 2),
-                  transitionsBuilder: (BuildContext context,
-                      Animation<double> animation,
-                      Animation<double> secAnimation,
-                      Widget child) {
-                    return ScaleTransition(
-                      alignment: Alignment.center,
-                      scale: CurvedAnimation(
-                          parent: animation, curve: Curves.elasticOut),
-                      child: child,
-                    );
-                  },
-                  pageBuilder: (BuildContext context,
-                      Animation<double> animation,
-                      Animation<double> secAnimation) {
-                    return const SecondScreen();
-                  },
+                BouncyPage(
+                  widget: const SecondScreen(),
                 ),
               ),
             },
