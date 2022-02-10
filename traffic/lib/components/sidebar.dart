@@ -13,9 +13,10 @@ class SideDrawer extends StatelessWidget {
           const DrawerHeader(
             child: Center(),
             decoration: BoxDecoration(
+              shape: BoxShape.circle,
               color: Color.fromARGB(255, 53, 55, 56),
               image: DecorationImage(
-                image: AssetImage("images/1.jpg"),
+                image: AssetImage("images/8.jpeg"),
                   // image: NetworkImage(
                   //     "https://avatars.githubusercontent.com/u/22576758?v=4"),
                   fit: BoxFit.cover),
