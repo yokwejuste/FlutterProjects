@@ -12,7 +12,6 @@ class SideDrawer extends StatelessWidget {
         children: <Widget>[
           const DrawerHeader(
             child: Center(
-              child: Text(''),
             ),
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 53, 55, 56),
