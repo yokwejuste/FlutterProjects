@@ -102,7 +102,12 @@ class MusicApp extends StatelessWidget {
             ),
           ),
           body: const MapSample(),
-          
+          floatingActionButton: FloatingActionButton(
+              child: const Icon(
+                Icons.location_on,
+                color: Color.fromARGB(255, 221, 221, 221),
+              ),
+              onPressed: () {}),
         ),
       );
 }
