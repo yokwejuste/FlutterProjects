@@ -20,4 +20,5 @@ dev_dependencies:
 flutter:
   assets:
     - images/
+    - images/profiles/
   uses-material-design: true
