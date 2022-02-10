@@ -44,7 +44,7 @@ class SideDrawer extends StatelessWidget {
                     return ScaleTransition(
                       alignment: Alignment.center,
                       scale: CurvedAnimation(
-                          parent: animation, curve: Curves.easeInOut),
+                          parent: animation, curve: Curves.elasticOut),
                       child: child,
                     );
                   },
