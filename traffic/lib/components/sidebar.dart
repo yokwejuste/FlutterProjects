@@ -14,9 +14,6 @@ class SideDrawer extends StatelessWidget {
             child: Center(
               child: Text(''),
             ),
-            // decoration: BoxDecoration(
-            //   color: Colors.lightBlue,
-            // ),
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 53, 55, 56),
               image: DecorationImage(
