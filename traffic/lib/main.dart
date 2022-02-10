@@ -20,52 +20,68 @@ class MusicApp extends StatelessWidget {
             actions: [
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: PopupMenuButton(
-                  itemBuilder: (context) => [
-                    PopupMenuItem(
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.accessible,
-                            color: Colors.black,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text("Handicap"),
-                          )
-                        ],
+                child: Center(
+                  child: PopupMenuButton(
+                    itemBuilder: (context) => [
+                      PopupMenuItem(
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.timelapse,
+                              color: Colors.black,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              child: Text("Recent"),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    PopupMenuItem(
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.accessible,
-                            color: Colors.black,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text("Handicap"),
-                          )
-                        ],
+                      PopupMenuItem(
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.memory_sharp,
+                              color: Colors.black,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              child: Text("Saved"),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                    PopupMenuItem(
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.accessible,
-                            color: Colors.black,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 10),
-                            child: Text("Handicap"),
-                          )
-                        ],
+                      PopupMenuItem(
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.bookmark_add,
+                              color: Colors.black,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              child: Text("Bookmarked"),
+                            )
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
-                  icon: const Icon(Icons.account_circle),
+                      PopupMenuItem(
+                        child: Row(
+                          children: const [
+                            Icon(
+                              Icons.logout,
+                              color: Colors.black,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              child: Text("logout"),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
+                    icon: const Icon(Icons.account_circle),
+                  ),
                 ),
               ),
             ],
