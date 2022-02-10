@@ -103,6 +103,8 @@ class MusicApp extends StatelessWidget {
           ),
           body: const MapSample(),
           floatingActionButton: FloatingActionButton(
+              elevation: 0.5,
+              backgroundColor: const Color.fromARGB(255, 34, 84, 126),
               child: const Icon(
                 Icons.location_on,
                 color: Color.fromARGB(255, 221, 221, 221),
