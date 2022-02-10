@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:traffic/components/secondPage/secondPageHome.dart';
 
 class SideDrawer extends StatelessWidget {
   const SideDrawer({Key? key}) : super(key: key);
@@ -31,7 +32,29 @@ class SideDrawer extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.shopping_cart),
             title: const Text('Cart'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  transitionDuration: const Duration(seconds: 2),
+                  transitionsBuilder: (BuildContext context,
+                      Animation<double> animation,
+                      Animation<double> secAnimation,
+                      Widget child) {
+                    return ScaleTransition(
+                      alignment: Alignment.center,
+                      scale: animation,
+                      child: child,
+                    );
+                  },
+                  pageBuilder: (BuildContext context,
+                      Animation<double> animation,
+                      Animation<double> secAnimation) {
+                    return const SecondScreen();
+                  },
+                ),
+              ),
+            },
           ),
           ListTile(
             leading: const Icon(Icons.border_color),
