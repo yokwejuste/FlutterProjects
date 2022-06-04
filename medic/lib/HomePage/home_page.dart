@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:medic/AuthentificationPages/LoginPage/login_page.dart';
-import 'package:medic/HomePage/HomeCarousel/home_carousel.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -10,7 +9,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  void count() {}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,13 +16,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           const Padding(
-            padding: EdgeInsets.only(top: 50),
-            child: SizedBox(
-              child: 
-              // Carousel(),
-              Image(
-                image: AssetImage('assets/images/bg.png'),
-              ), 
+            padding: EdgeInsets.only(top: 150),
+            child: Padding(
+              padding: EdgeInsets.all(20),
+              child: SizedBox(
+                width: 400,
+                child: Image(
+                  image: AssetImage('assets/images/bg.png'),
+                ),
+              ),
             ),
           ),
           Expanded(child: Container()),
