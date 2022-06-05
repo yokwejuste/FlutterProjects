@@ -1,4 +1,53 @@
-import 'package:flutter/material.dart';
+/* import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+void main() {
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Carousel Slider',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter Carousel Slider Example'),
+        ),
+        body: CarouselSlider(
+          items: const [
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text('Android'),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text('iOS'),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text('Desktop'),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text('Web'),
+            )
+          ],
+          //Slider Container properties
+          options: CarouselOptions(
+            autoPlay: true,
+          ),
+        ),
+      ),
+    );
+  }
+} */
+
+
+
+
+
+
+/* import 'package:flutter/material.dart';
 
 class Carousel extends StatefulWidget {
   const Carousel({
@@ -112,3 +161,4 @@ List<Widget> indicators(imagesLength, currentIndex) {
     );
   });
 }
+ */
